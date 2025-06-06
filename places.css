@@ -18,8 +18,8 @@ header a {
 }
 
 header nav a:hover {
-  background-color: rgb(183, 230, 235);
-  color: rgb(59, 59, 59);
+  color: rgb(77, 77, 77);
+  background-color: rgb(255, 251, 0);
 }
 
 #hamburgers {
