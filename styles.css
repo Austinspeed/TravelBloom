@@ -94,15 +94,9 @@
   color: rgb(0, 160, 117);
 }
 
-@media (max-width: 48rem) {
-  #hero {
-    height: 20em;
-  }
-
+@media (max-width:1000px) {
   #hero-content {
-    width: 28rem;
-    padding: 1.5rem;
-    top: 6.25rem;
+    top: 18rem;
   }
 
   #hero-content h1 {
@@ -137,5 +131,9 @@
   .destination p {
     font-size: 1rem;
     margin: 0.7rem 0;
+  }
+
+  .destination img {
+    height: 20rem;
   }
 }
