@@ -126,9 +126,9 @@
   }
 
   #hero-content {
+    width: 40rem;
     top: 15rem;
     padding: 5rem 0;
-    width: 40rem;
   }
 
   #hero-content h1 {
