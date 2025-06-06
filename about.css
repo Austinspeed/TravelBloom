@@ -3,23 +3,22 @@ body {
   color: rgb(68, 68, 68);
 }
 
-#page-logo a {
-    color: rgb(245, 243, 160);
-}
-
 header {
   position: static;
   background-color: rgb(118,180,184);
-  margin-bottom: 3rem;
 }
 
 header a {
-  color: rgb(183, 230, 235);
+  color: rgb(255, 251, 0);
 }
 
 header nav a:hover {
   background-color: rgb(183, 230, 235);
   color: rgb(59, 59, 59);
+}
+
+#page-logo a {
+    color: rgb(245, 243, 160);
 }
 
 #hamburgers {
@@ -30,10 +29,89 @@ header nav a:hover {
   background-color: rgba(240, 238, 95, 0.5);
 }
 
-.hamburger {
-  background-color: rgba(255, 251, 0);
+main {
+    width: 80%;
+    margin: 10rem auto 5rem;
 }
 
-#description {
-    margin: 5rem;
+main h1 {
+  text-decoration: underline;
+  margin-bottom: 1.5rem;
+}
+
+@media (width < 1000px) {
+  header {
+    width: 100%;
+    margin: 0;
+    padding: 2rem 1rem;
+  }
+
+  #page-logo a {
+    font-size: 2.2rem;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  #hamburgers {
+    width: 3rem;
+    height: 2rem;
+    display: flex;
+  }
+
+  .hamburger {
+  background-color: rgba(255, 251, 0);
+  height: 3px;
+  width: 100%;
+}
+
+aside {
+  padding-top: 2.5rem;
+}
+
+aside ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+aside li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+aside li a {
+  font-size: 1.5rem;
+}
+
+  main {
+    margin-top: 3rem;
+    width: 80%;
+  }
+
+  #description {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #description p {
+    font-size: 1.2rem;
+  }
+
+  footer {
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+  }
+
+  footer li {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 2rem;
+  }
 }

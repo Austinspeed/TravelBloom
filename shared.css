@@ -99,9 +99,7 @@ aside a {
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
-  width: 30px;
-  height: 15px;
+  justify-content: space-around;
   transition-property: background-color;
   transition-duration: 0.5s;
   transition-delay: 0.05s;
@@ -114,8 +112,9 @@ aside a {
 
 .hamburger{
   background-color: rgba(255, 251, 0);
-  height: 100%;
+  height: 8px;
   width: 100%;
+  /* margin-bottom: 10px; */
 }
 
 footer {
@@ -139,40 +138,3 @@ footer img {
   height: 100%;
 }
 
-@media (width < 1000px) {
-  header nav {
-    display: none;
-  }
-
-  #hamburgers {
-    display: flex;
-  }
-
-  header{
-    padding: 3rem;
-  }
-
-  #page-logo a {
-      font-size: 1.5rem;
-  }
-
-
-  header a {
-    font-size: 1.05rem;
-    padding: 0.4rem;
-  }
-
-  footer {
-    height: 5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 0;
-  }
-
-  footer li {
-    width: 3rem;
-    height: 3rem;
-    margin: 0 2rem;
-  }
-}

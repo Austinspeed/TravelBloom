@@ -34,12 +34,15 @@ header nav a:hover {
   background-color: rgba(255, 251, 0);
 }
 
+main {
+  width: 80%;
+  margin: 4rem auto;
+}
+
 main ul {
-  width: 75em;
-  margin: 0 auto 3rem auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.25rem 1.25rem;
+  gap: 1.5rem;
 }
 
 li:nth-of-type(3) {
@@ -86,27 +89,72 @@ main li img {
   background-color: rgb(235, 253, 255);
 }
 
-@media (max-width: 48rem) {
+@media (width < 1000px) {
+  header{
+    padding: 4rem;
+  }
+
+  #page-logo a {
+    font-size: 5rem;
+  }
+
+  header nav {
+    display: none;
+  }
+
   #hamburgers {
+    width: 6rem;
+    height: 5rem;
     display: flex;
   }
 
+  #aside-header {
+    margin: 5rem 4rem;
+  }
+
+  aside ul {
+    margin-top: 10rem;
+  }
+
+  aside li a {
+    font-size: 4rem;
+  }
+
+  main {
+    width: 75%;
+  }
+
   main ul {
-    grid-template-columns: 1fr 1fr;
-    width: 80%;
+    display: flex;
+    flex-direction: column;
   }
 
   main li {
     flex-direction: column;
-    margin-bottom: 1.5rem;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: 2.5rem;
   }
 
   main li img {
-    height: 200px;
+    height: 350px;
     width: 100%;
+    object-fit: cover;
   }
 
-  main li:nth-of-type(3) img {
-    width: 100%;
+  .item-content {
+    padding: 2rem;
+  }
+
+  .item-content h2 {
+    font-size: 3rem;
+  }
+
+  .item-content p {
+    font-size: 2rem;
+  }
+
+  .item-content .actions {
+    font-size: 2rem;
   }
 }
