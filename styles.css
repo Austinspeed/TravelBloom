@@ -1,26 +1,26 @@
 #hero {
-  height: 800px;
+  height: 50em;
   background-image: url("images/places/ocean.jpg");
   background-position: center;
   background-size: cover;
 }
 
 #hero-content {
-  width: 900px;
+  width: 56rem;
   background-color: rgba(51, 47, 47, 0.8);
   box-shadow: 2px 4px 8px rgb(68, 67, 67);
   border-radius: 8px;
   text-align: center;
-  padding: 50px 0;
+  padding: 3.1rem 0;
   margin: 0 auto;
   position: relative;
-  top: 200px;
+  top: 12.5rem;
 }
 
 #hero-content h1 {
   color: white;
   text-transform: uppercase;
-  font-size: 50px;
+  font-size: 3.1rem;
   font-family: "Raleway", sans-serif;
   margin: 0;
 }
@@ -28,17 +28,17 @@
 #hero-content p {
   color: white;
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 300;
-  margin-bottom: 32px;
+  margin-bottom: 2rem;
 }
 
 #hero-content a {
   text-decoration: none;
   background-color: rgb(255, 251, 0);
-  padding: 12px 24px;
+  padding: 0.8em 1.5em;
   color: black;
-  font-size: 24px;
+  font-size: 1.5em;
   font-weight: bold;
   border-radius: 8px;
   box-shadow: 2px 4px 8px rgb(68, 67, 67);
@@ -49,16 +49,16 @@
 }
 
 #highlights {
-  padding: 24px;
+  padding: 1.5em;
   background: linear-gradient(0deg, rgb(227, 255, 253), rgb(202, 243, 240));
 }
 
 #highlights h2 {
   text-transform: uppercase;
   text-align: center;
-  font-size: 40px;
+  font-size: 2.5em;
   color: rgb(59, 65, 64);
-  margin: 24px 0;
+  margin: 1.5rem 0;
 }
 
 #destinations {
@@ -66,24 +66,24 @@
   justify-content: center;
   width: 90%;
   margin: auto;
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 }
 
 .destination {
-  margin: 0 20px;
+  margin: 0 1.25rem;
   text-transform: uppercase;
   width: 25%;
 }
 
 .destination p {
   text-align: center;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: rgb(124, 123, 123);
-  margin: 20px 0;
+  margin: 1.25rem 0;
 }
 
 .destination img {
-  height: 200px;
+  height: 12.5rem;
   width: 100%;
   box-shadow: 2px 4px 8px rgb(68, 67, 67);
   border-radius: 10px;
@@ -92,4 +92,50 @@
 
 .destination strong {
   color: rgb(0, 160, 117);
+}
+
+@media (max-width: 48rem) {
+  #hero {
+    height: 20em;
+  }
+
+  #hero-content {
+    width: 28rem;
+    padding: 1.5rem;
+    top: 6.25rem;
+  }
+
+  #hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  #hero-content p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  #hero-content a {
+    padding: 0.4em 0.8em;
+    font-size: 0.8em;
+  }
+
+  #highlights h2 {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  #destinations {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .destination {
+    width: 85%;
+    margin-bottom: 1.5rem;
+  }
+
+  .destination p {
+    font-size: 1rem;
+    margin: 0.7rem 0;
+  }
 }

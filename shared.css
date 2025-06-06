@@ -13,7 +13,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 60px;
+  padding: 1rem 4rem;
   position: absolute;
   width: 100%;
   top: 0;
@@ -22,10 +22,10 @@ header {
 }
 
 #page-logo a {
-  padding: 10px;
+  padding: 0.8rem;
   font-family: "Oleo Script", sans-serif;
   color: rgb(245, 243, 160);
-  font-size: 50px;
+  font-size: 3rem;
   text-decoration: none;
   text-transform: uppercase;
   text-shadow: 1px 1px 2px rgb(0, 0, 0);
@@ -36,14 +36,14 @@ header ul {
 }
 
 header li {
-  margin-left: 20px;
+  margin-left: 1.25rem;
 }
 
 header a {
   color: rgb(255, 251, 0);
   text-decoration: none;
-  font-size: 20px;
-  padding: 12px;
+  font-size: 1.25rem;
+  padding: 0.75rem;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   border-radius: 6px;
 }
@@ -53,9 +53,74 @@ header nav a:hover {
   background-color: rgb(255, 251, 0);
 }
 
+aside {
+  display: none;
+  background-color: rgb(126,189,180);
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#side-drawer:target {
+  display: block;
+}
+
+#aside-header {
+   height: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 3rem;
+}
+
+aside ul{
+  list-style: none;
+  margin: 3rem 0;
+}
+
+aside li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+aside a {
+  text-decoration: none;
+  color: rgb(255, 251, 0);
+}
+
+#hamburgers {
+  padding: 0.5rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  width: 30px;
+  height: 15px;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  transition-delay: 0.05s;
+  display: none;
+}
+
+#hamburgers:hover {
+  background-color: rgba(240, 238, 95, 0.5);
+}
+
+.hamburger{
+  background-color: rgba(255, 251, 0);
+  height: 100%;
+  width: 100%;
+}
+
 footer {
   background: linear-gradient(70deg, rgb(24, 24,24), rgb(25, 29, 29));
-  padding: 36px 0;
+  padding: 2.25rem 0;
 }
 
 footer ul {
@@ -64,12 +129,49 @@ footer ul {
 }
 
 footer li {
-  width: 80px;
-  height: 80px;
-  margin: 0 50px;
+  width: 5rem;
+  height: 5rem;
+  margin: 0 3rem;
 }
 
 footer img {
   width: 100%;
   height: 100%;
+}
+
+@media (max-width: 48rem){
+  header{
+    padding: 1rem 1.5rem;
+  }
+
+  #hamburgers {
+    display: flex;
+  }
+
+  #page-logo a {
+      font-size: 1.5rem;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  header li {
+    margin-left: 0.5rem;
+  }
+
+  header a {
+    font-size: 1.05rem;
+    padding: 0.4rem;
+  }
+
+  footer {
+    padding: 1.1rem 0;
+  }
+
+  footer li {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0 1.5rem;
+  }
 }
