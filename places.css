@@ -1,6 +1,7 @@
 body {
   background: linear-gradient(0deg, rgb(227, 255, 253), rgb(202, 243, 240));
   color: rgb(68, 68, 68);
+  overflow-x: hidden;
 }
 
 #page-logo a {
@@ -91,11 +92,11 @@ main li img {
 
 @media (width < 1000px) {
   header{
-    padding: 4rem;
+    padding:  3rem 4rem;
   }
 
   #page-logo a {
-    font-size: 5rem;
+    font-size: 3rem;
   }
 
   header nav {
@@ -106,10 +107,12 @@ main li img {
     width: 6rem;
     height: 5rem;
     display: flex;
+    margin: 0;
+    padding: 0;
   }
 
   #aside-header {
-    margin: 5rem 4rem;
+    padding: 4rem 5rem; 
   }
 
   aside ul {
@@ -121,7 +124,7 @@ main li img {
   }
 
   main {
-    width: 75%;
+    width: 80%;
   }
 
   main ul {
@@ -143,15 +146,16 @@ main li img {
   }
 
   .item-content {
-    padding: 2rem;
+    padding: 1.5rem;
   }
 
   .item-content h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .item-content p {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    margin-top: 0.8rem;
   }
 
   .item-content .actions {
